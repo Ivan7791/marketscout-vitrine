@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WordPress Post-Update Cleanup Review — Sample</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f6f0e8;color:#211713;margin:0;padding:32px}main{max-width:980px;margin:0 auto;background:#fffaf4;border:1px solid #e5d5c7;border-radius:28px;padding:34px;box-shadow:0 20px 60px rgba(69,43,28,.09)}h1{font-size:44px;line-height:1;margin:0 0 14px;letter-spacing:-.04em}h2{margin-top:32px}p,li{color:#675a52;line-height:1.65}.pill{display:inline-block;background:#231713;color:#fff0e7;padding:7px 11px;border-radius:999px;font-weight:850;font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #eadbd0;border-radius:20px;padding:20px}.ok{color:#385c25;font-weight:850}.warn{color:#b5522f;font-weight:850}@media(max-width:720px){.grid{grid-template-columns:1fr}body{padding:18px}h1{font-size:34px}}</style>
+</head>
+<body>
+<main>
+  <span class="pill">Sample cleanup review</span>
+  <h1>WordPress Post-Update Cleanup Review</h1>
+  <p>This sample shows how we separate small visible breakage from risky plugin, theme, shortcode, form, and CSS conflicts after WordPress updates.</p>
+  <h2>Fast triage map</h2>
+  <div class="grid">
+    <div class="card"><h3>Layout and CSS</h3><p>Check whether broken spacing, fonts, grids, or responsive behavior comes from theme CSS, builder output, cache, or custom snippets.</p></div>
+    <div class="card"><h3>Plugin behavior</h3><p>Review plugin version changes, conflicts, missing shortcodes, disabled modules, and admin notices before editing code.</p></div>
+    <div class="card"><h3>Forms and leads</h3><p>Verify whether contact forms still submit, notify, store entries, and pass spam checks after updates.</p></div>
+    <div class="card"><h3>Content blocks</h3><p>Look for Gutenberg, page-builder, widget, or shortcode output that changed after theme/plugin updates.</p></div>
+    <div class="card"><h3>Cache and assets</h3><p>Check minification, cache layers, CDN, missing CSS/JS, browser console errors, and asset load order.</p></div>
+    <div class="card"><h3>Safe change boundary</h3><p>Decide what can be fixed directly and what needs backup, staging, or developer access before touching production.</p></div>
+  </div>
+  <h2>Sample output</h2>
+  <ul>
+    <li class="ok">Small safe fixes: cache clear, CSS override, plugin setting, missing shortcode replacement.</li>
+    <li class="warn">Risky fixes: theme edits, plugin downgrades, database changes, checkout/form logic changes.</li>
+    <li>Priority list: visible customer-facing breakage first, admin-only cleanup second.</li>
+    <li>Next-step recommendation for owner or developer.</li>
+  </ul>
+  <h2>Why this sells</h2>
+  <p>Owners often do not want a full rebuild. They want the site to stop looking broken, forms to work, and a clear answer on whether the current setup is safe to keep.</p>
+</main>
+</body>
+</html>
