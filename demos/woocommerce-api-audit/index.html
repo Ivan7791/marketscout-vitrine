@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WooCommerce Order Flow & API Audit — Sample</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f6f0e8;color:#211713;margin:0;padding:32px}main{max-width:980px;margin:0 auto;background:#fffaf4;border:1px solid #e5d5c7;border-radius:28px;padding:34px;box-shadow:0 20px 60px rgba(69,43,28,.09)}h1{font-size:44px;line-height:1;margin:0 0 14px;letter-spacing:-.04em}h2{margin-top:32px}p,li{color:#675a52;line-height:1.65}.pill{display:inline-block;background:#231713;color:#fff0e7;padding:7px 11px;border-radius:999px;font-weight:850;font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #eadbd0;border-radius:20px;padding:20px}.risk{color:#b5522f;font-weight:850}@media(max-width:720px){.grid{grid-template-columns:1fr}body{padding:18px}h1{font-size:34px}}</style>
+</head>
+<body>
+<main>
+  <span class="pill">Sample diagnostic checklist</span>
+  <h1>WooCommerce Order Flow & API Audit</h1>
+  <p>This sample shows the kind of diagnostic structure used before touching a live WooCommerce store. It is designed for problems where paid orders fail to reach a CRM, supplier, fulfillment system, warehouse, or external API.</p>
+  <h2>What we check first</h2>
+  <div class="grid">
+    <div class="card"><h3>1. Order state</h3><p>Which WooCommerce status triggers the integration: pending, processing, completed, paid, refunded, failed?</p></div>
+    <div class="card"><h3>2. Payment boundary</h3><p>Whether payment confirmation happens before the outbound API call or after an async webhook.</p></div>
+    <div class="card"><h3>3. API authentication</h3><p>Keys, signatures, token expiry, IP allowlists, environment mismatch, and test vs production endpoints.</p></div>
+    <div class="card"><h3>4. Payload shape</h3><p>Required fields, SKU mapping, customer data, shipping logic, currency, tax, and validation errors.</p></div>
+    <div class="card"><h3>5. Retry behavior</h3><p>What happens when the external API is down: duplicate orders, silent failure, manual retry, or logging.</p></div>
+    <div class="card"><h3>6. Safe repair path</h3><p>What can be checked from logs first, what needs staging, and what should not be changed directly in production.</p></div>
+  </div>
+  <h2>Typical output</h2>
+  <ul>
+    <li>Likely failure point and confidence level.</li>
+    <li>Missing access or logs needed for confirmation.</li>
+    <li>Smallest safe fix to try first.</li>
+    <li class="risk">Production risks that require backup or staging before changes.</li>
+  </ul>
+  <h2>What this is not</h2>
+  <p>This is not a blind promise to repair every integration immediately. It is the first step that prevents expensive guessing.</p>
+</main>
+</body>
+</html>
