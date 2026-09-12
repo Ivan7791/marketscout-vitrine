@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diagnostic Intake — What to Send First</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f6f0e8;color:#211713;margin:0;padding:32px}main{max-width:900px;margin:0 auto;background:#fffaf4;border:1px solid #e5d5c7;border-radius:28px;padding:34px;box-shadow:0 20px 60px rgba(69,43,28,.09)}h1{font-size:44px;line-height:1;margin:0 0 14px;letter-spacing:-.04em}h2{margin-top:30px}p,li{color:#675a52;line-height:1.65}.pill{display:inline-block;background:#231713;color:#fff0e7;padding:7px 11px;border-radius:999px;font-weight:850;font-size:13px}.box{background:white;border:1px solid #eadbd0;border-radius:20px;padding:20px;margin-top:14px}.copy{white-space:pre-wrap;background:#211713;color:#fff0e7;border-radius:18px;padding:18px;overflow:auto}.warn{color:#b5522f;font-weight:850}</style>
+</head>
+<body>
+<main>
+  <span class="pill">Client intake</span>
+  <h1>What to send before a diagnostic review</h1>
+  <p>This keeps the first step safe. We can usually start with public information, screenshots, logs, and a clear description before asking for any access.</p>
+  <div class="box">
+    <h2>Send this first</h2>
+    <ul>
+      <li>Website URL.</li>
+      <li>What is broken or suspicious.</li>
+      <li>When it started and what changed before it appeared.</li>
+      <li>Screenshots or exact error messages.</li>
+      <li>Relevant plugin/theme names and versions if known.</li>
+      <li>For WooCommerce/API: one example order ID, expected result, actual result, and any API/log error.</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h2>Do not send yet</h2>
+    <ul>
+      <li class="warn">No passwords in the first message.</li>
+      <li>No payment details, customer private data, or full database exports.</li>
+      <li>No production admin access until the diagnostic path requires it and the access boundary is agreed.</li>
+    </ul>
+  </div>
+  <h2>Copy/paste request</h2>
+  <div class="copy">Hi, I need a diagnostic review.
+
+Site URL:
+Problem:
+When it started:
+What changed before it started:
+Screenshots/errors:
+WordPress/theme/plugin versions if known:
+For WooCommerce/API: expected order flow, actual result, example failed order/log:</div>
+</main>
+</body>
+</html>
