@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spreadsheet Automation Pack — Sample Report</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f6f0e8;color:#211713;margin:0;padding:32px;}
+    main{max-width:900px;margin:0 auto;background:#fffaf4;border:1px solid #e5d5c7;border-radius:28px;padding:32px;box-shadow:0 20px 60px rgba(69,43,28,.09)}
+    h1{font-size:42px;line-height:1;margin:0 0 12px;letter-spacing:-.04em} h2{margin-top:32px} p,li{color:#675a52;line-height:1.65} table{width:100%;border-collapse:collapse;margin-top:14px;background:white;border-radius:18px;overflow:hidden} th,td{padding:13px;border-bottom:1px solid #eadbd0;text-align:left} th{background:#f0d5c5;color:#71311e} td:nth-child(n+2),th:nth-child(n+2){text-align:right}.pill{display:inline-block;background:#dfebd4;color:#385c25;padding:7px 11px;border-radius:999px;font-weight:800;font-size:13px}.links a{display:inline-block;margin:8px 10px 0 0;color:#b5522f;font-weight:800}</style>
+</head>
+<body>
+<main>
+  <span class="pill">Working offline demo</span>
+  <h1>Sample Sales Operations Report</h1>
+  <p>This demo takes a CSV export of orders, calculates revenue and profit by channel, and flags rows needing follow-up.</p>
+  <p>Total orders: <strong>8</strong><br>Total revenue: <strong>$3,520.00</strong><br>Estimated profit: <strong>$2,437.00</strong></p>
+  <h2>Revenue by channel</h2>
+  <table><thead><tr><th>Channel</th><th>Orders</th><th>Revenue</th><th>Profit</th></tr></thead><tbody><tr><td>Amazon</td><td>2</td><td>$390.00</td><td>$219.00</td></tr><tr><td>Shopify</td><td>2</td><td>$830.00</td><td>$573.00</td></tr><tr><td>WooCommerce</td><td>4</td><td>$2,300.00</td><td>$1,645.00</td></tr></tbody></table>
+  <h2>Follow-up flags</h2>
+  <ul><li>Order 1003: needs follow-up (refunded).</li><li>Order 1006: needs follow-up (pending).</li></ul>
+  <h2>What a client version can do</h2>
+  <ul><li>Combine exports from Shopify, WooCommerce, Amazon, Stripe, CRM, or CSV files.</li><li>Apply client-specific margin, status, and exception rules.</li><li>Create daily Markdown, JSON, CSV, or spreadsheet reports.</li></ul>
+  <p class="links"><a href="sample_orders.csv">Sample CSV</a><a href="build_report.py">Python script</a><a href="sample_report.json">JSON output</a><a href="sample_report.md">Markdown output</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+order_id,date,channel,customer,country,sku,revenue,cost,status
+1001,2026-09-01,Shopify,Avery Co,US,starter-kit,240,92,paid
+1002,2026-09-01,WooCommerce,North Pine,CA,diagnostic,480,140,paid
+1003,2026-09-02,Amazon,Blue River,US,starter-kit,180,81,refunded
+1004,2026-09-02,WooCommerce,Delta Lab,GB,audit,620,170,paid
+1005,2026-09-03,Shopify,Green House,US,audit,590,165,paid
+1006,2026-09-03,WooCommerce,Oak Studio,DE,diagnostic,430,135,pending
+1007,2026-09-04,Amazon,Quiet Gear,US,starter-kit,210,90,paid
+1008,2026-09-04,WooCommerce,Silver Co,US,audit,770,210,paid

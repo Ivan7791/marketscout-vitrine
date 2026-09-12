@@ -1,0 +1,44 @@
+{
+  "total_orders": 8,
+  "total_revenue": 3520.0,
+  "total_profit": 2437.0,
+  "by_channel": {
+    "Shopify": {
+      "orders": 2,
+      "revenue": 830.0,
+      "profit": 573.0
+    },
+    "WooCommerce": {
+      "orders": 4,
+      "revenue": 2300.0,
+      "profit": 1645.0
+    },
+    "Amazon": {
+      "orders": 2,
+      "revenue": 390.0,
+      "profit": 219.0
+    }
+  },
+  "flags": [
+    {
+      "order_id": "1003",
+      "status": "refunded",
+      "reason": "needs follow-up"
+    },
+    {
+      "order_id": "1003",
+      "status": "refunded",
+      "reason": "margin below 60%"
+    },
+    {
+      "order_id": "1006",
+      "status": "pending",
+      "reason": "needs follow-up"
+    },
+    {
+      "order_id": "1007",
+      "status": "paid",
+      "reason": "margin below 60%"
+    }
+  ]
+}
